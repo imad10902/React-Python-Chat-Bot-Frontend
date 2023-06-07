@@ -51,6 +51,8 @@ function App() {
       body: JSON.stringify(chatMessage),
     })
       .then((data) => {
+        console.log(data)
+        console.log(data.json())
         return data.json();
       })
       .then((data) => {
